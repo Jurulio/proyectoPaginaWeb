@@ -1,0 +1,1378 @@
+/* --------------estilo pagina principal */
+body {
+    height: 100%;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cuerpoPaginaInicio {
+    background-color: #eebd8e; /* Color de fondo claro y neutro */
+    background-size: cover; /* Ajustar para cubrir toda la pantalla */
+    background-position: center;
+    background-attachment: fixed; /* Para que el fondo se quede fijo mientras haces scroll */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    font-family: 'Cinzel Decorative'; 
+}
+
+header nav {
+    display: inline-block;
+    margin-left: 90px; 
+    vertical-align: middle;
+}
+
+.logo {
+    position: absolute;
+    top: 5px; /* Ajustar para alinearlo */
+    left: 5px;
+    width: 70px;
+    height: auto;
+    display: inline-block;
+    border: 2px solid #000000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Cinzel Decorative'; 
+}
+
+header nav ul li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600; 
+}
+
+.intro {
+    padding: 15px; /* Ajustar el padding para dar más espacio alrededor del texto */
+    margin: 0 auto; /* Centra el bloque horizontalmente */
+    max-width: 60%; /* Ancho de la caja */
+    position: relative;
+    z-index: 2;
+    margin-top: 315px;
+    background-color: rgba(240, 182, 128, 0.253); /* Fondo semi-transparente */
+    border-radius: 5px;
+    display: block; 
+    text-align: center;
+    margin-bottom: 150px; /* Añade margen inferior para separar del siguiente bloque */
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #00000057;     /* Sombra en la esquina inferior derecha */
+}
+
+.intro, .libros-realizados, .personajes-importantes, .lugares-importantes, .bestias-importantes, .news {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.2; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    font-weight: bold; /* Añade negrita */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* portada del libro */
+.portada {
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.5); /* Sombra difuminada alrededor de la imagen */
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* estilo para caracteristicas de la obra debajo de la imagen de la portada */
+.caracteristicas-obra {
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto; /* Centra el bloque horizontalmente */
+    font-weight: bold; /* Añade negrita */
+    background-color: rgba(240, 182, 128, 0.253); /* Fondo semi-transparente */
+    border-radius: 5px;
+    display: block;
+    max-width: 20%; /* Ancho del contenedor */
+    position: relative;
+    z-index: 2;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #00000057;     /* Sombra en la esquina inferior derecha */
+}
+
+.caracteristicas-obra h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.caracteristicas-obra ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.caracteristicas-obra ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.caracteristicas-obra ul li:before {
+    content: "•"; 
+    color: #ff6600; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+
+
+
+
+/* --------------estilo pagina libros */
+
+section.sobre-libroSharon {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fafafa28; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+section.sobre-libroSharon .maldicionSharon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+section.sobre-libroSharon .maldicionSharon img {
+    margin-bottom: 20px;
+    border-radius: 5%; 
+    width: 400px; /* Ajustar tamaño */
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.sobre-libroSharon .maldicionSharon h3 {
+    font-size: 22px;
+    color: #020202;
+    margin-bottom: 15px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #00000057;     /* Sombra en la esquina inferior derecha */
+}
+
+section.sobre-libroSharon .maldicionSharon p {
+    font-size: 15px;
+    line-height: 1.8; /* Aumentar el espacio entre líneas */
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: 'Cinzel Decorative'; 
+    font-weight: bold; /* Añade negrita */
+    text-shadow:      
+        1px 1px 0 #00000088;     /* Sombra en la esquina inferior derecha */
+}
+
+section.sobre-libroSharon .maldicionSharon a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.sobre-libroSharon .maldicionSharon a:hover {
+    background-color: #ff6600;
+}
+
+
+
+
+/* --------------estilo pagina autor */
+
+section.sobre-autor {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fdb28734; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+section.sobre-autor .krm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+section.sobre-autor .krm img {
+    margin-bottom: 20px;
+    border-radius: 50%; /* Hacer la imagen circular */
+    width: 300px; /* Ajustar tamaño */
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.sobre-autor .krm h3 {
+    font-size: 20px;
+    color: #020202;
+    margin-bottom: 15px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #00000057;     /* Sombra en la esquina inferior derecha */
+}
+
+section.sobre-autor .krm p {
+    font-size: 16px;
+    line-height: 1.8; /* Aumentar el espacio entre líneas */
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: 'Cinzel Decorative'; 
+    font-weight: bold; /* Añade negrita */
+}
+
+section.sobre-autor .krm a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.sobre-autor .krm a:hover {
+    background-color: #ff6600;
+}
+
+
+
+/* --------------estilo pagina personajes */
+
+body.fondopersonajes {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+}
+
+/* Contenedor de grid */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "arriba-izquierda . arriba-derecha"
+        ". centro ."
+        "abajo-izquierda . abajo-derecha";
+    grid-template-columns: 0.5fr 1fr 0.5fr; /* Tres columnas */
+    grid-template-rows: auto 0fr auto; /* Altura adaptable */   
+    justify-content: center; /* Centra los elementos del grid */
+    align-items: center; /* Alinea verticalmente */
+}
+
+/* Definir las áreas */
+.arriba-izquierda { grid-area: arriba-izquierda; }
+.arriba-derecha { grid-area: arriba-derecha; }
+.abajo-izquierda { grid-area: abajo-izquierda; }
+.abajo-derecha { grid-area: abajo-derecha; }
+.centro { grid-area: centro; }
+
+/* Estilos para las imágenes */
+.arriba-izquierda img, 
+.arriba-derecha img, 
+.abajo-izquierda img, 
+.abajo-derecha img, 
+.centro img {
+    width: 100%; /* Ajusta para que las imágenes ocupen el 100% del contenedor */
+    max-width: 350px; /* Tamaño máximo */
+    height: auto;
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto hover para hacer que la imagen se agrande */
+.arriba-izquierda a:hover img, 
+.arriba-derecha a:hover img, 
+.abajo-izquierda a:hover img, 
+.abajo-derecha a:hover img, 
+.centro a:hover img {
+    transform: scale(1.25); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Ajustar el tamaño de las áreas */
+.arriba-izquierda, 
+.arriba-derecha, 
+.abajo-izquierda, 
+.abajo-derecha, 
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Reducir padding para acercar los elementos */
+}
+
+/* Footer en la parte inferior */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    width: 100%; /* Asegura que el footer ocupe el ancho completo */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "arriba-izquierda arriba-izquierda"
+            "arriba-derecha arriba-derecha"
+            "centro centro"
+            "abajo-izquierda abajo-izquierda"
+            "abajo-derecha abajo-derecha";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .centro img {
+        max-width: 80%; /* Ajusta el tamaño en pantallas más pequeñas */
+    }
+}
+
+section.personajes-importantes a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.personajes-importantes a:hover {
+    background-color: #ff6600;
+}
+
+/* Grid para los personajes de cada sección */
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Personajes realeza */
+.personajeRealeza {
+    background-color: #aa8a1f33;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeRealeza img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeRealeza h3 {
+    margin: 10px 0;
+    font-size: 17px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #ffffff9f;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Personajes guardia real */
+.personajesGuardiaReal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.personajeGuardiaReal {
+    background-color: #57330a83;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.personajeGuardiaReal img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 575px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeGuardiaReal h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #6868689f;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Personajes consejo real */
+.personajesConsejoReal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.personajeConsejoReal {
+    background-color: #91755683;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(116, 86, 41, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeConsejoReal img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeConsejoReal h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #6868689f;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Personajes espectros */
+.personajesEspectros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.personajeEspectros {
+    background-color: #b4b6b936;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(116, 86, 41, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeEspectros img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeEspectros h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.personajesEspectros2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.personajeEspectros2 {
+    background-color: #b4b6b936;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(116, 86, 41, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeEspectros2 img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeEspectros2 h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Estilos pagina pueblo */
+
+/* Estilos del contenedor de las imágenes */
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;    
+    gap: 50px;
+    width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+/* Estilos para las imágenes */
+.boton-imagen img {
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 2px solid #000000;
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto hover en las imágenes */
+.boton-imagen img:hover {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el cursor */
+}
+
+.contenedor-botones h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Personajes otros */
+.personajesOtros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.personajeOtros {
+    background-color: #b4b6b936;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(116, 86, 41, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeOtros img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeOtros h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+/* Personajes otros 2 */
+.personajesOtros2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.personajeOtros2 {
+    background-color: #c49a2721;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(175, 123, 44, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personajeOtros2 img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.personajeOtros2 h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.botonVueltaPersonajes {
+    display: flex;
+    justify-content: center; /* Centrar el botón horizontalmente */
+    align-items: center; /* Alinear verticalmente si es necesario */
+    margin: 30px auto; /* Agregar margen automático para centrar */
+}
+    
+.botonVueltaPersonajes a {
+    font-family: '';
+    font-weight: bold; /* Añade negrita */
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+    
+.botonVueltaPersonajes a:hover {
+    background-color: #ff6600;
+}
+
+
+/* --------------estilo pagina localizaciones */
+
+/* Asegurar que el body ocupe al menos el 100% de la altura de la ventana */
+body {
+    max-width: 100%;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main contenido toma todo el espacio disponible */
+main {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para mayor legibilidad */
+    color: white;
+}
+
+.tituloLocalizaciones{
+    font-family: 'Cinzel Decorative', cursive !important;
+    font-size: 23px;
+    font-weight: bold; /* Añade negrita */
+    color: #ffc400;
+}
+
+.tituloCastillo{
+    font-family: '';
+    font-size: 22px;
+    color:#000000;
+    font-weight: bold; /* Añade negrita */
+    transform: translateY(-20px); /* Mueve el título hacia arriba */
+    margin-left: 365px;
+    text-align: left;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.tituloCiudad{
+    font-family: '';
+    font-size: 22px;
+    color:#fffcfc;
+    font-weight: bold; /* Añade negrita */
+    transform: translateY(-20px); /* Mueve el título hacia arriba */ 
+    margin-left: 430px;
+    text-align: left;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ubicacionesDestacadas{
+    font-family: '';
+    font-weight: bold; /* Añade negrita */
+    color: #fff;
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */ 
+}
+
+/* Ajuste para la sección "Castillo de Rísgarth" */
+section.lugares-importantes:nth-of-type(1) {
+    margin-top: 175px; 
+}
+
+section.lugares-importantes:nth-of-type(1) p {
+    color: rgb(0, 0, 0);
+    background-color: rgba(150, 150, 124, 0.5); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Ajuste para la sección "Ciudad de Rísgarth" */
+section.lugares-importantes:nth-of-type(2) {
+    margin-top: 160px; 
+}
+
+section.lugares-importantes:nth-of-type(2) article {
+    padding-top: 15px; 
+}
+
+section.lugares-importantes:nth-of-type(2) p {
+    color: rgb(255, 255, 255);
+    text-shadow:      
+        2px 2px 0 #000000;     /* Sombra en la esquina inferior derecha */ 
+    background-color: rgba(124, 127, 150, 0.5); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lugares-importantes p {
+    font-family: 'Cinzel Decorative';
+    font-weight: bold; /* Añade negrita */
+    font-size: 15px;
+    line-height: 1.2; 
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 500px; /* Ajustar el ancho máximo del texto */
+    margin-left: 300px;
+}
+
+/* Estilos para el contenedor del botón */
+.centrar-boton {
+    position: relative;
+}
+
+/* Estilos para el botón mapa */
+.boton-centro {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(51, 51, 51, 0.5);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón mapa */
+.boton-centro:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+section.lugares-importantes a {
+    font-family: '';
+    font-weight: bold; /* Añade negrita */
+    display: inline-block;
+    margin-top: 100px;
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+section.lugares-importantes a:hover {
+    background-color: #ff6600;
+}
+
+/* --------------estilo pagina localizaciones mapa*/
+
+body.seccionmapa {
+    position: relative; /* Necesario para que los botones interactivos se posicionen respecto a este contenedor */
+}
+
+/* Posicionar los botones interactivos sobre el fondo */
+.map-link {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0); /* Invisible pero interactivo */
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+.map-link2 {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0); /* Invisible pero interactivo */
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+.map-link:hover {
+    background-image: url('/images/posibleFondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el botón */
+    background-position: center; /* Centra la imagen en el botón */
+    border-radius: 50%;
+}
+
+.map-link2:hover {
+    background-image: url('/images/posibleFondoGentePueblo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el botón */
+    background-position: center; /* Centra la imagen en el botón */
+    border-radius: 50%;
+}
+
+.btn-area {
+    display: none;
+    position: absolute;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.map-link:hover .btn-area {
+    display: block; /* Muestra el botón cuando pasas el ratón */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el botón */
+}
+
+.map-link2:hover .btn-area {
+    display: block; /* Muestra el botón cuando pasas el ratón */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el botón */
+}
+
+
+/* Posicionar el botón en el centro inferior */
+.botonMapaUbicaciones {
+    position: absolute;
+    bottom: 130px; /* Distancia por encima del footer */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;    
+}
+
+/* Estilo del botón */
+.botonMapaUbicaciones a {
+    font-family: '';
+    font-weight: bold; /* Añade negrita */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botonMapaUbicaciones a:hover {
+    background-color: #ff6600;
+}
+
+
+/* --------------estilo ubicaciones deestacadas castillo*/
+
+body.ubicastilloblanco {
+    height: 100vh; /* Ocupa la altura total de la ventana */
+    margin: 0;
+    position: relative; /* Cambiado a relative para que todo el contenido se ajuste a la ventana */
+    z-index: 1; /* Colocar el contenido detrás del header y el footer */
+}
+
+header.ubicastilloblanco {
+    position: absolute;
+    width: 100%;    
+    z-index: 10; /* Asegura que están encima del contenido */
+}
+
+footer.ubicastilloblanco {    
+    position: absolute;
+    width: 100%;    
+    z-index: 10; /* Asegura que están encima del contenido */
+}
+
+header.ubicastilloblanco {
+    top: 0;
+}
+
+footer.ubicastilloblanco {
+    bottom: 0;
+}
+
+.grid-container-secciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: 1fr 1fr; /* Dos filas de igual tamaño */
+    height: 100vh; /* Asegura que la grid ocupe el 100% de la pantalla */
+    gap: 0;
+    position: relative;
+    z-index: 1; /* Asegura que las secciones estén detrás del header y footer */
+    width: 100vw;
+}
+
+/* Estilos generales para las secciones */
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-size: cover; /* Cambiar a contain para evitar recortes */
+    background-repeat: no-repeat; /* Evitar que las imágenes se repitan */
+    background-position: center; /* Centrar las imágenes */
+}
+
+/* Fondo para cada sección */
+.castillo-1 {
+    background-image: url('/images/imagenGranComedor.jpg');    
+    border: 2px solid #000000;
+    background-position: bottom !important; /* Ajusta la posición a la parte inferior de la imagen */
+}
+
+.castillo-1 p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold; 
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+}
+
+.castillo-1 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.castillo-2 {
+    background-image: url('/images/imagenBibliotecaCastilloBuena.jpg');    
+    border: 2px solid #000000;
+}
+
+.castillo-2 p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.castillo-2 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.castillo-3 {
+    background-image: url('/images/imagenInteriorCastillo.jpg');   
+    border: 2px solid #000000;
+}
+
+.castillo-3 p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.castillo-3 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.castillo-4 {
+    background-image: url('/images/imagenPatiosInternosBuena.jpg');  
+    border: 2px solid #000000;
+}
+
+.castillo-4 p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold; 
+}
+
+.castillo-4 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* --------------estilo ubicaciones destacadas ciudad*/
+
+body.ubiciudadrisgar {
+    height: 100vh; /* Ocupa la altura total de la ventana */
+    margin: 0;
+    position: relative; /* Cambiado a relative para que todo el contenido se ajuste a la ventana */
+    z-index: 1; /* Colocar el contenido detrás del header y el footer */
+    display: flex;
+    flex-direction: column;
+}
+
+header.ubiciudadrisgar {
+    position: absolute;
+    width: 100%;    
+    z-index: 10; /* Asegura que están encima del contenido */
+}
+
+footer.ubiciudadrisgar {    
+    position: fixed;
+    width: 100%;    
+    z-index: 10; /* Asegura que están encima del contenido */
+}
+
+header.ubiciudadrisgar {
+    top: 0;
+}
+
+footer.ubiciudadrisgar {
+    bottom: 0;
+}
+
+.grid-container-seccionesciudad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: 1fr 1fr; /* Dos filas de igual tamaño */
+    height: 100vh; /* Asegura que la grid ocupe el 100% de la pantalla */
+    gap: 0;
+    position: relative;
+    z-index: 1; /* Asegura que las secciones estén detrás del header y footer */
+    width: 100vw;
+}
+
+/* Estilos generales para las secciones */
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-size: cover; /* Cambiar a contain para evitar recortes */
+    background-repeat: no-repeat; /* Evitar que las imágenes se repitan */
+    background-position: center; /* Centrar las imágenes */
+    border: 2px solid #000000;
+}
+
+/* Fondo para cada sección */
+.ciudad-1 {
+    background-image: url('/images/imagenPuerto.jpg');    
+    background-position: bottom;
+}
+
+.ciudad-1 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-1 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ciudad-2 {
+    background-image: url('/images/imagenTabernaTuertoBuena.jpg'); 
+    background-position: bottom;  
+}
+
+.ciudad-2 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-2 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ciudad-3 {
+    background-image: url('/images/imagenTabernaDelfinBuena.jpg'); 
+}
+
+.ciudad-3 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-3 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ciudad-4 {
+    background-image: url('/images/imagenEstadio.jpg');    
+}
+
+.ciudad-4 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-4 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ciudad-5 {
+    background-image: url('/images/imagenConquitadores.jpg');    
+}
+
+.ciudad-5 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-5 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ciudad-6 {
+    background-image: url('/images/imagenPlazaLibertad.jpg');    
+    background-position: bottom; 
+}
+
+.ciudad-6 p {
+    font-size: 13px; /* Cambia el tamaño del párrafo */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37); /* Fondo negro semi-transparente */
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #646464c7;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+}
+
+.ciudad-6 h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative'; 
+    text-shadow:      
+        1px 1px 0 #000000;     /* Sombra en la esquina inferior derecha */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Botones de retorno al mapa */
+
+/* Posición fija del botón en la pantalla */
+.botonUbicacionesDestacadas {
+    position: fixed;
+    left: 50%; /* Centra horizontalmente */
+    top: 48%; /* Ajusta verticalmente según lo necesites */
+    transform: translateX(-50%); /* Centrado exacto en el eje X */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 100; /* Asegura que el botón esté sobre otros elementos */
+}
+
+.botonUbicacionesDestacadas:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
